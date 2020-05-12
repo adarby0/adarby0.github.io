@@ -1,21 +1,26 @@
-<!-- Write your HTML in here -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>My Cat</title>
-	<link rel="stylesheet" type="text/css" href="app.css">
-</head>
-<body>
-	<section id="container">
-		<!-- page content -->
-		<h1>This is My New Cat</h1>
-		<img src="imgs/kitty.jpg" alt="Kitty on a bed">
-		<button>Get Next Photo</button>
-		<p>She currently has no name. Please help me name her.</p>
-	</section>
-	<script type="text/javascript" src="app.js"></script>
-</body>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fact Finder</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="jssampler.js"></script>
+  </head>
+  
+  <body>
+    <h1>Fact Finder</h1>
+
+    <button class="button" type="button" onclick="changeDisplay('Watermelons are actually berries!')">Fact #1</button>
+    <button class="button" type="button" onclick="changeDisplay('Horses have nearly 360° vision!')">Fact #2</button>
+    <button class="button" type="button" onclick="changeDisplay('Fact #5 is false.')">Fact #3</button>
+    <button class="button" type="button" onclick="changeDisplay('Everyone eventually dies.')">Fact #4</button>
+    <button class="button" type="button" onclick="changeDisplay('Fact #3 is true.')">Fact #5</button>
+
+    <div id="output"></div>
+  </body>
+  
 </html>
-
-
