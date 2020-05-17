@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="tictactoe.css">  
+    
+  </head>
+  
+  <body>
+    <div class="titletext">Tic Tac T<span style="color: blue">o</span>e</div>
+    <div id="main">
+      <div id="one" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="two" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="thr" class="box" onclick="playerTakeTurn(this)"></div>
+
+      <div id="fou" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="fiv" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="six" class="box" onclick="playerTakeTurn(this)"></div>
+
+      <div id="sev" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="eig" class="box" onclick="playerTakeTurn(this)"></div>
+      <div id="nin" class="box" onclick="playerTakeTurn(this)"></div>
+     </div>
+
+     <div id="lightbox" class="hidden"></div>
+
+     <div id="positionMessage">
+      <div id="boundaryMessage" class="hidden">
+        <img id="x" src="images/x2.png" alt="close" onclick="continueGame()">
+        <h1 class="titletext" id="message">&nbsp;</h1>
+        <p class ="titletext" id="message2"></p>
+      </div>
+     </div>
+     <center>
+      <audio id="megalovania" controls>
+        <source src="audio/Megalovania.mp3" type="audio/mpeg">
+      </audio>
+    </center>
+    <!-- include an external JavaScript file -->
+    <script src="tictactoe.js"></script>
+  </body>
+  
+</html>
